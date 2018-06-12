@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Node Notes</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation.css">
+</head>
+<body>
+  <div class="grid-container" style="margin-top: 30px;">
+    <div class="grid-x">
+      <div class="cell medium-8 medium-offset-2">
+        <form action="/notes" method="POST">
+          <input type="text" placeholder="Title" name="title">
+          <textarea placeholder="Message" name="content"></textarea>
+          <button class="btn btn-primary" type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

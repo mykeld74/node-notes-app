@@ -23,7 +23,7 @@ mongoose.connect(dbConfig.url)
 });
 
 app.get('/', (req, res) => {
-  res.json({"message" : "Welcome to the Notes App."})
+  res.sendFile(__dirname + '/index.html')
 });
 
 require('./app/routes/note.routes.js')(app);

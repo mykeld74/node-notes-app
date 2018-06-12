@@ -10,4 +10,6 @@ module.exports = (app) => {
   app.put('/notes/:noteId', notes.update);
 
   app.delete('/notes/:noteId', notes.delete);
+  
+  app.set('view engine', 'ejs');
 }

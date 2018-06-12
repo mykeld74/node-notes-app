@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Node Notes</title>
+</head>
+
+<body>
+  <form action="/notes" method="POST">
+    <input type="text" placeholder="Title" name="title">
+    <input type="text" placeholder="Message" name="content">
+    <button type="submit">Submit</button>
+  </form>
+  <ul class="notes">
+    <% for(var i=0; i<notes.length; i++) {%>
+      <li class="note">
+        <span>
+          <%= notes[i].title %>
+        </span>
+        <span>
+          <%= notes[i].content %>
+        </span>
+      </li>
+      <% } %>
+  </ul>
+</body>
+
+</html>
